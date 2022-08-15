@@ -1,0 +1,31 @@
+<html>
+    <script>
+        // soma, subtracao, divisao, resto ou porcentagem
+        function calculo(operacao, num1, num2){
+            var resultado;
+            if (operacao === "soma"){
+                num1 + num2;
+                resultado = num1 + num2;
+            } else if (operacao === "subtracao"){
+                num1 - num2;
+                resultado = num1 - num2;
+            } else if (operacao === "multiplicacao"){
+                num1 * num2;
+                resultado = num1 * num2;
+            } else if (operacao === "divisao"){
+                num1 / num2;
+                resultado = num1 / num2;
+            } else if (operacao === "resto"){
+                num1 % num2;
+                resultado = num1 % num2;
+            } else if (operacao === "porcentagem"){
+                num1 * num2 / 100;
+                resultado = num1 * num2 / 100;
+            } else {
+                console.log("Operação inválida!");
+            }
+            return resultado;
+        }
+        console.log(calculo("divisao", 9, 3));
+    </script>
+</html>

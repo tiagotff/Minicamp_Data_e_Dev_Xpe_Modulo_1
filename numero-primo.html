@@ -1,0 +1,18 @@
+<html>
+    <script>
+        function verificacaoNumeroPrimo(numero){
+            let verificacaoNumeroPrimo = true;
+                for (let contador = 2; contador < numero; contador ++){
+                    if (numero % contador === 0){
+                    verificacaoNumeroPrimo = false;
+                    break;
+                    }
+                }
+            if(verificacaoNumeroPrimo == true && numero > 1) {
+                console.log(`O numero ${numero} é primo`);
+            }else{
+                console.log(`O numero ${numero} não é primo`);
+            }
+        }
+    </script>
+</html>
